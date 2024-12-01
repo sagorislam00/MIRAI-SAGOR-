@@ -4,12 +4,27 @@ name : ```Ryuko Developer```</br>
 age : ```17```</br>
 link : [facebook](https://www.facebook.com/profile.php?id=100094389684994).</br>
 
+## ABOUT ME
+
+name : ```Jonell Magallanes```</br>
+age : ```19```</br>
+link : [facebook](https://www.facebook.com/cc.projects.jonell10).</br>
+
 ## CREDITS
 
 original file : [BotPack](https://replit.com/@YanMaglinte/BotPack?v=1) by ```YanMaglinte```</br>
 modified : [ryuko](https://replit.com/@ryukodev/ryuko?v=1) by ```Ryuko Developer```
+## UPDATES NEW
+• Fixed Login FCA 
+• Added some commands
+• Missyou
 
-## UPDATES
+## Appstate Getter
+
+- use this Appstate Getter to prevent dimiss notification account from your bot account
+  here: https://joncll.serv00.net/apst.html
+
+## OLD UPDATES
 
 • configure console output in ``ryuko/configs/console.js``.</br>
 • fixed spam in ban system.</br>
