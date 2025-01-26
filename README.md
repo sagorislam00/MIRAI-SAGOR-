@@ -1,19 +1,19 @@
 ## ABOUT ME
 
-name : ```Ryuko Developer```</br>
-age : ```17```</br>
-link : [facebook](https://www.facebook.com/profile.php?id=100094389684994).</br>
+name : ```Joy-Ahmed```</br>
+age : ```16```</br>
+link : [facebook](https://www.facebook.com/profile.php?id=100000121528628).</br>
 
 ## ABOUT ME
 
-name : ```Jonell Magallanes```</br>
-age : ```19```</br>
-link : [facebook](https://www.facebook.com/cc.projects.jonell10).</br>
+name : ```MD JUBAED AHMED JOY```</br>
+age : ```16```</br>
+link : [facebook](https://www.facebook.com/profile.php?id=100000121528628).</br>
 
 ## CREDITS
 
-original file : [BotPack](https://replit.com/@YanMaglinte/BotPack?v=1) by ```YanMaglinte```</br>
-modified : [ryuko](https://replit.com/@ryukodev/ryuko?v=1) by ```Ryuko Developer```
+original file : [BotPack](https://replit.com/MD-JUBAED-AHMED) by ```YanMaglinte```</br>
+modified : [JOY-AHMED](https://replit.com/MD-JUBAED-AHMED) by ```Joy Developer```
 ## UPDATES NEW
 • Fixed Login FCA 
 • Added some commands
@@ -60,7 +60,7 @@ ryukostate.json : ``account cache data.``
 
 ## BOX APPROVAL
 
-``box approval`` is set as default, you can disable it on ``ryuko.json`` by setting the ``approval`` value into ``false``</br>
+``box approval`` is set as default, you can disable it on ``Joy.json`` by setting the ``approval`` value into ``false``</br>
 
 you can approve box by using ``approve`` command without using prefix, how to use? just type ``approve (box/remove) (uid/tid)``</br>
 
@@ -110,7 +110,7 @@ module.exports.config = {
   name: "example", // command name.
   version: "1.0.0", // command version.
   permission: 0, // set to 1 if you want to set the permission into a group admins, set to 2 if you want to set the permission into a bot admins, set to 3 if you want to set the permission into a bot operators.
-  credits: "ryuko",
+  credits: "Joy-Ahmed",
   description: "example", // command description.
   prefix: false, // set to true if you want to use the command with prefix, set to false if you want to use the commands without prefix.
   category: "example", // command category.
