@@ -223,8 +223,8 @@ try {
   if (!global.config.PREFIX) {
     logger.error(`please enter your bot prefix in ${chalk.blueBright('Joy.json')} file`)
   }
-  if (global.config.Owner != "100000121528628") {
-    logger.error(`detected : author was changed at ${chalk.blueBright('Joy.json')}`);
+  if (global.config.owner != "100000121528628") {
+    logger.error(`detected : owner was changed at ${chalk.blueBright('Joy.json')}`);
     process.exit(0);
   }
   if (packages.author != "Joy-Ahmed") {
