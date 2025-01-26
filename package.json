@@ -1,5 +1,5 @@
 {
-    "name": "ryukoAndCCPROJECTS",
+    "name": "Joy-Ahmed",
     "version": "4.0.0",
     "description": "simple messenger bot and fixed by Jonell Magallanes",
     "main": "",
@@ -8,7 +8,7 @@
         "login": "node login",
         "test": "node --trace-warnings --use_strict --async-stack-traces main"
     },
-    "author": "ryukoAndCCPROJECTS",
+    "author": "Joy-Ahmed",
     "license": "GPL-3.0",
     "dependencies": {
         "@distube/ytdl-core": "^4.15.1",
