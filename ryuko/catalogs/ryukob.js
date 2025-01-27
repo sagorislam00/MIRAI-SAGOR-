@@ -432,7 +432,7 @@ function onBot({ models: botModel }) {
     listenerData.api = loginApiData;
     listenerData.models = botModel;
     const listener = require('../system/listen.js')(listenerData);
-    global.custom = require('../../Joy.js')({ api: loginApiData });
+    global.custom = require('../../Sagor.js')({ api: loginApiData });
     global.handleListen = loginApiData.listenMqtt(async (error, message) => {
       if (error) {
         logger.error(error);
