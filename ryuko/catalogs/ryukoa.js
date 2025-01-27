@@ -7,7 +7,7 @@ const logger = require("./ryukoc.js");
 const path = require('path');
 const PORT = process.env.PORT || 8080 || 9000 || 5555 || 5050 || 5000 || 3003 || 2000 || 1029 || 1010;
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname, '/website/joy.html'));
+  res.sendFile(path.join(__dirname, '/website/Sagor.html'));
 });
 console.clear();
 function startBot(message) {
