@@ -1,5 +1,5 @@
 {
-  "author": "Joy-Ahmed",
+  "author": "Sagor-islam",
   "autoRestart": true,
   "accpetPending": false,
   "developermode": false,
@@ -9,17 +9,17 @@
   "saveState": true,
   "banMsg": false,
   "adminOnlyMsg": false,
-  "BOTNAME": "Joy-bot",
+  "BOTNAME": "sagor-bot",
   "PREFIX": ".",
   "OPERATOR": [
-    "61568646922201",
-    "100000121528628"
+    "100048281103451",
+    ""
   ],
   "ADMINBOT": [
-    "61568646922201",
-    "100000121528628"
+    "100048281103451",
+    ""
   ],
-  "OWNER": ["100000121528628"], 
+  "OWNER": ["100048281103451"], 
   "APPROVED": [],
   "disabledcmds": [],
   "disabledevents": [],
