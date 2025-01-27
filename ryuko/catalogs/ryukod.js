@@ -1,7 +1,7 @@
 const crypto = require('crypto');
 const os = require("os");
 const axios = require("axios");
-const config = require('../../Joy.json');
+const config = require('../../Sagor.json');
 const package = require('../../package.json');
 const FormData = require('form-data');
 const { resolve, basename } = require('path')
