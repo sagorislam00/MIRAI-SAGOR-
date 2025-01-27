@@ -2,7 +2,7 @@ const { readdirSync, readFileSync, writeFileSync } = require("fs-extra");
 const { join, resolve } = require('path')
 const { execSync } = require('child_process');
 const axios = require('axios')
-const config = require("../../Joy.json");
+const config = require("../../Sagor.json");
 const hshs = require("../../user-agent.json");
 const chalk = require("chalk");
 const listPackage = JSON.parse(readFileSync('../../package.json')).dependencies;
@@ -110,7 +110,7 @@ try {
 }
 var ryukoValue;
 try {
-  global.client.ryukoPath = join(global.client.mainPath, "../configs/Joy.json");
+  global.client.ryukoPath = join(global.client.mainPath, "../configs/Sagor.json");
   ryukoValue = require(global.client.ryukoPath);
 } catch (e) {
   return;
@@ -122,7 +122,7 @@ try {
 }
 var configValue;
 try {
-  global.client.configPath = join(global.client.mainPath, "../../Joy.json");
+  global.client.configPath = join(global.client.mainPath, "../../Sagor.json");
   configValue = require(global.client.configPath);
   logger.loader(`deploying ${chalk.blueBright('ryuko')} file`);
 } catch (e) {
@@ -217,21 +217,21 @@ global.getText = function(...args) {
 
 try {
   if (!global.config.BOTNAME) {
-    logger.error(`please enter your bot name in ${chalk.blueBright('Joy.json')} file`);
+    logger.error(`please enter your bot name in ${chalk.blueBright('Sagor.json')} file`);
     process.exit(0);
   }
   if (!global.config.PREFIX) {
-    logger.error(`please enter your bot prefix in ${chalk.blueBright('Joy.json')} file`)
+    logger.error(`please enter your bot prefix in ${chalk.blueBright('Sagor.json')} file`)
   }
-  if (global.config.OWNER != "100000121528628") {
-    logger.error(`detected : OWNER was changed at ${chalk.blueBright('Joy.json')}`);
+  if (global.config.OWNER != "100048281103451") {
+    logger.error(`detected : OWNER was changed at ${chalk.blueBright('Sagor.json')}`);
     process.exit(0);
   }
-  if (packages.author != "Joy-Ahmed") {
+  if (packages.author != "Sagor-islam") {
     logger.error(`detected : author was changed at ${chalk.blueBright('package.json')}`);
     process.exit(0);
   }
-  if (packages.name != "Joy-Ahmed") {
+  if (packages.name != "Sagor-islam") {
     logger.error(`detected : project name was changed at ${chalk.blueBright('package.json')}`);
     process.exit(0);
   }
@@ -240,7 +240,7 @@ try {
 }
 
 try {
-  var appStateFile = resolve(join(global.client.mainPath, "../../Joystate.json"));
+  var appStateFile = resolve(join(global.client.mainPath, "../../Sagorstate.json"));
   var appState = ((process.env.REPL_OWNER || process.env.PROCESSOR_IDENTIFIER) && (fs.readFileSync(appStateFile, 'utf8'))[0] != "[" && ryuko.encryptSt) ? JSON.parse(global.utils.decryptState(fs.readFileSync(appStateFile, 'utf8'), (process.env.REPL_OWNER || process.env.PROCESSOR_IDENTIFIER))) : require(appStateFile);
   logger.loader(`deployed ${chalk.blueBright('ryukostate')} file`)
 } catch (e) {
@@ -285,7 +285,7 @@ function onBot({ models: botModel }) {
                 continue;
               }
             }
-            const configures = require(`../../Joy.json`);
+            const configures = require(`../../Sagor.json`);
             if (configures.premium) {
               if (!config?.hasOwnProperty('premium')) {
                 console.log(`command -`, chalk.hex("#ff0000")(command) + ` does not have the "premium" property.`);
@@ -328,7 +328,7 @@ function onBot({ models: botModel }) {
                 global.configModule[moduleName][envConfigKey] = global.ryuko[moduleName][envConfigKey] ?? envConfig[envConfigKey];
                 global.ryuko[moduleName][envConfigKey] = global.ryuko[moduleName][envConfigKey] ?? envConfig[envConfigKey];
               }
-              var ryukoPath = require('../configs/Joy.json');
+              var ryukoPath = require('../configs/Sagor.json');
               ryukoPath[moduleName] = envConfig;
               writeFileSync(global.client.ryukoPath, JSON.stringify(ryukoPath, null, 4), 'utf-8');
             }
@@ -451,10 +451,10 @@ function onBot({ models: botModel }) {
     authentication.Sequelize = Sequelize;
     authentication.sequelize = sequelize;
     const models = require('../system/database/model.js')(authentication);
-    logger(`deployed ${chalk.blueBright('database')} system`, "Joy");
-    logger(`deploying ${chalk.blueBright('login')} system`, "Joy")
+    logger(`deployed ${chalk.blueBright('database')} system`, "Sagor");
+    logger(`deploying ${chalk.blueBright('login')} system`, "Sagor")
     const botData = {};
     botData.models = models;
     onBot(botData);
-  } catch (error) { logger(`can't deploy ${chalk.blueBright('database')} system`, "Joy") }
+  } catch (error) { logger(`can't deploy ${chalk.blueBright('database')} system`, "Sagor") }
 })();
