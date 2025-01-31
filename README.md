@@ -1,66 +1,24 @@
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=1000&color=FF0000&width=435&lines=WELCOME+MY+PROGRAM+;I'M+SAGOR+;THANK+YOU+" alt="Typing SVG" /></a>
 ## ABOUT ME
 
-name : ```Joy-Ahmed```</br>
-age : ```16```</br>
-link : [facebook](https://www.facebook.com/profile.php?id=100000121528628).</br>
-
-## ABOUT ME
-
-name : ```MD JUBAED AHMED JOY```</br>
-age : ```16```</br>
-link : [facebook](https://www.facebook.com/profile.php?id=100000121528628).</br>
+name : ```SaGor Developer```</br>
+age : ```18+```</br>
+link : [facebook](https://www.facebook.com/XsagorXnxx ).</br>
 
 ## CREDITS
 
-original file : [BotPack](https://replit.com/MD-JUBAED-AHMED) by ```YanMaglinte```</br>
-modified : [JOY-AHMED](https://replit.com/MD-JUBAED-AHMED) by ```Joy Developer```
-## UPDATES NEW
-• Fixed Login FCA 
-• Added some commands
-• Missyou
-
-## Appstate Getter
-
-- use this Appstate Getter to prevent dimiss notification account from your bot account
-  here: https://joncll.serv00.net/apst.html
-
-## OLD UPDATES
-
-• configure console output in ``ryuko/configs/console.js``.</br>
-• fixed spam in ban system.</br>
-• discover the new feature with ```premium command```, you can enable it by adding a variable named ```premium``` and the value is boolean</br></br>
-```premium ussage example```
-```js
-module.exports.config = {
-  name: "example",
-  version: "example",
-  credits: "example",
-  permission: 0,
-  description: "example",
-  category: "example",
-  usages: "example",
-  prefix: true,
-  premium: true, // this is the example of premium feature ussage
-  cooldown: 0,
-  dependencies: {
-    "": ""
-  }
-}
-```
-```txt
-UPCOMING UPDATE :
-adding aliases for each commands
-```
+original file : [BotPack](....) by ```YanMaglinte```</br>
+modified : [SaGor](...) by ```SaGor Developer```
 
 ## CONFIG AND CUSTOM
 
-ryuko.js : ``configure auto restart and auto accept pending messages.``</br>
-ryuko.json : ``configure bot name, bot prefix, bot operators and admins.``</br>
-ryukostate.json : ``account cache data.``
+SaGor.js : ``configure auto restart and auto accept pending messages.``</br>
+SaGor.json : ``configure bot name, bot prefix, bot operators and admins, appstate save``</br>
+SaGorstate.json : ``account cache data.``</br>SaGor/configs/Sagor.json : ``Set Your Bot Id Email Password``
 
 ## BOX APPROVAL
 
-``box approval`` is set as default, you can disable it on ``Joy.json`` by setting the ``approval`` value into ``false``</br>
+``box approval`` is set as default, you can disable it on ``Sagor.json`` by setting the ``approval`` value into ``false``</br>
 
 you can approve box by using ``approve`` command without using prefix, how to use? just type ``approve (box/remove) (uid/tid)``</br>
 
@@ -79,11 +37,19 @@ remove box from approved list
 approve remove 4834812366643016
 ```
 
-## HOW TO GET 'RYUKOSTATE.JSON' DATA?
+## Login System
 
-to get ``ryukostate.json`` data, please follow these steps :</br>
+If you want to login with an email password, go to SaGor/configs/SaGor.json and set your email password ``email``, ``password`` value
 
-step 1 : download fbstate exporter [here](https://www.mediafire.com/file/vyy6jbo7ul2d3th/fbstate_exporter-1.0.xpi+(1).zip/file)</br>
+If You Use fbstate go to ``SaGorstate.json`` and past fbstate
+
+if you run use ``email`` and ``password``, use SaGor.json(``saveState:false``); otherwise, use SaGor.json(``saveState:true``)
+
+## HOW TO GET 'SaGorSTATE.JSON' DATA?
+
+to get ``SaGorstate.json`` data, please follow these steps :</br>
+
+step 1 : download fbstate exporter [here](https://drive.google.com/uc?id=1SFsFP_VhMyPg6JpqJtpqnjAr2kiKD7tl)</br>
 
 step 2 : download ``kiwi browser`` from the play store.</br>
 
@@ -99,29 +65,8 @@ step 7 : after logging in, tap on the three dots again and scroll down to find t
 
 step 8 : click on it and then click on ``copy fbstate``.</br>
 
-step 9 : paste the copied data into the ``ryukostate.json`` file.</br>
+step 9 : paste the copied data into the ``Nayanstate.json`` file.</br>
 
 step 10 : finally, click on ``run`` to initiate the bot.</br>
 
 
-## HOW TO ADD COMMANDS?
-```js
-module.exports.config = {
-  name: "example", // command name.
-  version: "1.0.0", // command version.
-  permission: 0, // set to 1 if you want to set the permission into a group admins, set to 2 if you want to set the permission into a bot admins, set to 3 if you want to set the permission into a bot operators.
-  credits: "Joy-Ahmed",
-  description: "example", // command description.
-  prefix: false, // set to true if you want to use the command with prefix, set to false if you want to use the commands without prefix.
-  category: "example", // command category.
-  usages: "example", // command ussage.
-  cooldowns: 5, // 5 seconds command cooldown.
-  dependencies: {
-		"name": "version" // not required but if the command have a npm packages, you can type the package name and version to automatically install the package.
-	}
-};
-
-module.exports.run = async ({api, event, args}) => {
-  // start coding
-}
-```
